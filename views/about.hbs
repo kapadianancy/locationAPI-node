@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        
+        <title>
+        {{title}}
+    </title></head>
+    <body>
+        <div class="content">
+        {{>header}}
+        <h1>{{heading}}</h1>
+        <p>{{name}}</p>
+        <img src="img1.jpg"/>
+        <br>
+        <br>
+        <form>
+            <input placeholder="Location"/>
+            <button>Search</button>
+
+            <div id="result"></div>
+        </form>
+        </div>
+        
+
+        {{>footer}}
+
+        <script src="js1.js"></script>
+    </body>
+</html>
