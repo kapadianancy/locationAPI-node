@@ -9,7 +9,7 @@ btn.addEventListener("click",(event)=>
     let l=address.value;
     event.preventDefault();
     console.log(l);
-    fetch("http://localhost:3000/weather?address="+l).then((res)=>
+    fetch("/weather?address="+l).then((res)=>
     {
         res.json().then((data)=>
         {

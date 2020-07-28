@@ -6,7 +6,7 @@ const getLocation=require('./getLocation1');
 const { json } = require('express');
 
 const app=express();
-const port=3000;
+const port=process.env.PORT || 3000;
 const data=[{name:"nancy",age:21},{name:"prince",age:19}];
 
 const publicPath=path.join(__dirname,'/public');
